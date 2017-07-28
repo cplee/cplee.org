@@ -1,2 +1,1 @@
-# cplee.org
-cplee.org website
+Website for [cplee.org](http://www.cplee.org)

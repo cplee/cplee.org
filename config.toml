@@ -1,0 +1,33 @@
+baseurl = "http://cplee.org/"
+languageCode = "en-us"
+title = "Casey Lee"
+theme = "aerial"
+
+[params]
+  name = "Casey Lee"
+  avatar = "https://www.gravatar.com/avatar/4579f48667cf3587ab911b44a7f29dda?s=100"
+  about = "Software Developer and Cloud Architect.<br/>Passionate about applying DevOps in the enterprise."
+  copyright = ""
+  #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll = ""
+  favicon = "favicon.ico"
+
+[[params.social]]
+  medium = "Twitter"
+  icon = "twitter"
+  link = "https://twitter.com/nektos"
+
+[[params.social]]
+  medium = "LinkedIn"
+  icon = "linkedin"
+  link = "https://www.linkedin.com/in/cplee"
+
+[[params.social]]
+  medium = "Github"
+  icon = "github"
+  link = "https://github.com/cplee"
+
+[[params.social]]
+  medium = "Email"
+  icon = "envelope-o"
+  link = "mailto:cplee@nektos.com"
