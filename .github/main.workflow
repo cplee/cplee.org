@@ -3,9 +3,15 @@ workflow "build-and-deploy" {
   resolves = ["deploy"]
 }
 
+action "info" {
+  uses = "docker://ubuntu:18.04"
+  args = "ls -alFtR"
+}
+
 action "build" {
   uses = "docker://cibuilds/hugo:0.53"
   args = "hugo"
+  needs = ["info"]
 }
 
 action "test" {
