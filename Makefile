@@ -1,20 +1,31 @@
-### Credit: https://blog.bramp.net/post/2015/08/01/hugo-makefile/
+# Configuration 
+BUCKET_NAME ?= cplee.org
+DISTRIBUTION_ID ?= E13UEQT4E03VGU 
+AWS_IMAGE ?= cibuilds/aws:1.16.81
+HUGO_IMAGE ?= cibuilds/hugo:0.53
 
-# All input files
-FILES=$(shell find archetypes config.toml content data layouts resources static themes -type f)
 
-# Below are PHONY targets
-default: check
+### Evaluate docker commands
+DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/project -w /project 
+AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
+HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
+HTMLPROOFER := $(DOCKER) $(HUGO_IMAGE) htmlproofer
 
-deps:
-	@brew ls hugo || brew install hugo
-	@npm ls htmlhint -g  --depth 1 || npm install htmlhint -g	
+build: clean
+	$(HUGO)
+	$(HTMLPROOFER) public --empty-alt-ignore --disable-external
+
+watch: clean
+	sleep 2 && open http://127.0.0.1:1313/ &
+	$(HUGO) server -w --bind 0.0.0.0
 
 help:
 	@echo "Usage: make <command>"
-	@echo "  default Builds the blog"
-	@echo "  clean   Cleans all build files"
-	@echo "  watch   Runs hugo in watch mode, waiting for changes"
+	@echo "  build        Build and check the site"
+	@echo "  watch        Runs hugo in watch mode, waiting for changes"
+	@echo "  deploy       Deploy to S3 bucket $(BUCKET_NAME)"
+	@echo "  clear-cache  Invalidate CloudFront distribution $(DISTRIBUTION_ID)"
+	@echo "  clean        Cleans all build files"
 	@echo ""
 	@echo "New article:"
 	@echo "  hugo new post/the_title"
@@ -22,26 +33,13 @@ help:
 	@echo "  make watch"
 	@echo "  open "
 
-check: public
-	@htmlhint public
+deploy: build
+	$(AWS) s3 sync --acl "public-read" --sse "AES256" public/ s3://$(BUCKET_NAME)/
+
+clear-cache:
+	$(AWS) cloudfront create-invalidation --distribution-id $(DISTRIBUTION_ID) --paths "/*"
 
 clean:
 	-rm -rf public
 
-watch: clean
-	hugo server -w
-
-deploy: clean check
-	aws s3 sync --acl "public-read" --sse "AES256" public/ s3://cplee.org/
-
-clear-cache:
-	aws cloudfront create-invalidation --distribution-id E13UEQT4E03VGU --paths "/*"
-
-.PHONY: default help check clean watch deploy clear-cache
-
-# Below are file based targets
-public: $(FILES)
-	hugo
-
-	# Ensure the public folder has it's mtime updated.
-	touch $@
+.PHONY: help build watch deploy clear-cache clean
