@@ -1,4 +1,7 @@
 Website for [cplee.org](http://www.cplee.org)
 
+# Local Testing
+```make watch```
+
 # Deploy
-```aws s3 sync --acl "public-read" --sse "AES256" public/ s3://cplee.org/```
+```make deploy```
