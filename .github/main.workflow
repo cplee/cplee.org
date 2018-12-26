@@ -10,7 +10,7 @@ action "info" {
 
 action "build" {
   uses = "docker://cibuilds/hugo:0.53"
-  args = "hugo"
+  args = "hugo -v"
   needs = ["info"]
 }
 
