@@ -6,7 +6,7 @@ HUGO_IMAGE ?= cibuilds/hugo:0.53
 
 
 ### Evaluate docker commands
-DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/project -w /project 
+DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/workspace -w /workspace 
 AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
 HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
 HTMLPROOFER := $(DOCKER) $(HUGO_IMAGE) htmlproofer
