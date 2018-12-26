@@ -3,15 +3,9 @@ workflow "build-and-deploy" {
   resolves = ["deploy"]
 }
 
-action "info" {
-  uses = "docker://ubuntu:18.04"
-  args = "ls -alFtR"
-}
-
 action "build" {
   uses = "docker://cibuilds/hugo:0.53"
-  args = "hugo -v"
-  needs = ["info"]
+  args = "hugo"
 }
 
 action "test" {
@@ -22,7 +16,7 @@ action "test" {
 
 action "deploy" {
   uses = "docker://cibuilds/aws:1.16.81"
-  args = "aws s3 sync --acl \"public-read\" --sse \"AES256\" public/ s3://cplee.org/"
+  args = "aws s3 sync --acl public-read --sse AES256 public/ s3://cplee.org/"
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
   env = {
     AWS_REGION = "us-west-2"
