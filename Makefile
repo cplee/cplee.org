@@ -51,5 +51,6 @@ clear-cache:
 clean:
 	-rm -rf public
 	-rm -rf static/resume
+	-rm -f static/resume.pdf
 
 .PHONY: help build watch deploy clear-cache clean resume
