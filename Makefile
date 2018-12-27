@@ -3,19 +3,28 @@ BUCKET_NAME ?= cplee.org
 DISTRIBUTION_ID ?= E13UEQT4E03VGU 
 AWS_IMAGE ?= cibuilds/aws:1.16.81
 HUGO_IMAGE ?= cibuilds/hugo:0.53
+HACKMYRESUME_IMAGE ?= hackmyresume:1.8.0
 
 
 ### Evaluate docker commands
 DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/workspace -w /workspace 
 AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
 HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
+HACKMYRESUME:= $(DOCKER) -t $(HACKMYRESUME_IMAGE) hackmyresume
 HTMLPROOFER := $(DOCKER) $(HUGO_IMAGE) htmlproofer
 
-build: clean
+build: clean resume
 	$(HUGO)
 	$(HTMLPROOFER) public --empty-alt-ignore --disable-external
 
-watch: clean
+resume: 
+	docker build -t $(HACKMYRESUME_IMAGE) resume/
+	$(HACKMYRESUME) validate resume/resume.json
+	$(HACKMYRESUME) analyze resume/resume.json
+	$(HACKMYRESUME) build resume/resume.json TO static/resume/index.html static/resume-pdf/resume.pdf 
+	mv static/resume-pdf/resume.pdf static/resume.pdf && rm -rf static/resume-pdf
+
+watch: clean resume
 	sleep 2 && open http://127.0.0.1:1313/ &
 	$(HUGO) server -w --bind 0.0.0.0
 
@@ -41,5 +50,6 @@ clear-cache:
 
 clean:
 	-rm -rf public
+	-rm -rf static/resume
 
-.PHONY: help build watch deploy clear-cache clean
+.PHONY: help build watch deploy clear-cache clean resume
