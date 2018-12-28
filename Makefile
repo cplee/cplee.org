@@ -21,8 +21,7 @@ resume:
 	docker build -t $(HACKMYRESUME_IMAGE) resume/
 	$(HACKMYRESUME) validate resume/resume.json
 	$(HACKMYRESUME) analyze resume/resume.json
-	$(HACKMYRESUME) build resume/resume.json TO static/resume/index.html static/resume-pdf/resume.pdf 
-	mv static/resume-pdf/resume.pdf static/resume.pdf && rm -rf static/resume-pdf
+	$(HACKMYRESUME) build resume/resume.json TO static/resume/index.html static/resume/resume.pdf 
 
 watch: clean resume
 	sleep 2 && open http://127.0.0.1:1313/ &
@@ -51,6 +50,5 @@ clear-cache:
 clean:
 	-rm -rf public
 	-rm -rf static/resume
-	-rm -f static/resume.pdf
 
 .PHONY: help build watch deploy clear-cache clean resume
