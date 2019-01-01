@@ -10,13 +10,13 @@ action "build" {
 
 
 action "resume-html" {
-  uses = "resume"
+  uses = "./resume/"
   args = "json_resume convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml"
   needs = ["build"]
 }
 
 action "resume-pdf" {
-  uses = "resume"
+  uses = "./resume/"
   args = "json_resume convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml"
   needs = ["resume-html"]
 }
