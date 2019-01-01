@@ -35,4 +35,4 @@ theme = "aerial"
 [[params.social]]
   medium = "Resume"
   icon = "file-text"
-  link = "/resume/resume.pdf"
+  link = "resume/resume.pdf"
