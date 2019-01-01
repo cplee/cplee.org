@@ -4,6 +4,7 @@ DISTRIBUTION_ID ?= E13UEQT4E03VGU
 AWS_IMAGE ?= cibuilds/aws:1.16.81
 HUGO_IMAGE ?= cibuilds/hugo:0.53
 JSONRESUME_IMAGE ?= json_resume:1.0.6
+SED_IMAGE ?= ubuntu:18.04
 
 
 ### Evaluate docker commands
@@ -12,6 +13,7 @@ AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION
 HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
 JSONRESUME  := $(DOCKER) -t $(JSONRESUME_IMAGE) json_resume
 HTMLPROOFER := $(DOCKER) $(HUGO_IMAGE) htmlproofer
+SED         := $(DOCKER) $(SED_IMAGE) sed
 
 build: clean resume
 	$(HUGO)
@@ -20,6 +22,7 @@ build: clean resume
 resume: 
 	docker build -t $(JSONRESUME_IMAGE) resume/
 	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml
+	$(SED) -i 's|http://code.jquery.com|https://code.jquery.com|g' static/resume/*.html
 	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml
 
 watch: clean resume

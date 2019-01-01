@@ -8,6 +8,12 @@ action "resume-html" {
   args = "json_resume convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml"
 }
 
+action "https-jquery" {
+  uses = "docker://ubuntu:18.04"
+  args = "sed -i 's|http://code.jquery.com|https://code.jquery.com|g' static/resume/*.html"
+  needs = ["resume-html"]
+}
+
 action "resume-pdf" {
   uses = "./resume/"
   args = "json_resume convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml"
@@ -16,7 +22,7 @@ action "resume-pdf" {
 action "build" {
   uses = "docker://cibuilds/hugo:0.53"
   args = "hugo"
-  needs = ["resume-html","resume-pdf"]
+  needs = ["https-jquery","resume-pdf"]
 }
 
 
