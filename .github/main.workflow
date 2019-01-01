@@ -10,7 +10,7 @@ action "resume-html" {
 
 action "https-jquery" {
   uses = "docker://ubuntu:18.04"
-  args = "sed -i 's|http://code.jquery.com|https://code.jquery.com|g' static/resume/*.html"
+  args = "sed -i \"s|http://code.jquery.com|https://code.jquery.com|g\" static/resume/*.html"
   needs = ["resume-html"]
 }
 
