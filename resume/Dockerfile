@@ -1,3 +1,6 @@
-FROM surnet/alpine-node-wkhtmltopdf:9.11.2-0.12.5-full
+FROM ruby:2.6.0-stretch
 
-RUN npm install hackmyresume@1.8.0 -g
+RUN apt-get update && apt-get install -y libssl1.0-dev && apt-get clean
+RUN gem install json_resume -v 1.0.6
+
+ENV RUBYOPT="-KU -E utf-8:utf-8"

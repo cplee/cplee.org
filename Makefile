@@ -3,14 +3,14 @@ BUCKET_NAME ?= cplee.org
 DISTRIBUTION_ID ?= E13UEQT4E03VGU 
 AWS_IMAGE ?= cibuilds/aws:1.16.81
 HUGO_IMAGE ?= cibuilds/hugo:0.53
-HACKMYRESUME_IMAGE ?= hackmyresume:1.8.0
+JSONRESUME_IMAGE ?= json_resume:1.0.6
 
 
 ### Evaluate docker commands
 DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/workspace -w /workspace 
 AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
 HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
-HACKMYRESUME:= $(DOCKER) -t $(HACKMYRESUME_IMAGE) hackmyresume
+JSONRESUME  := $(DOCKER) -t $(JSONRESUME_IMAGE) json_resume
 HTMLPROOFER := $(DOCKER) $(HUGO_IMAGE) htmlproofer
 
 build: clean resume
@@ -18,10 +18,9 @@ build: clean resume
 	$(HTMLPROOFER) public --empty-alt-ignore --disable-external
 
 resume: 
-	docker build -t $(HACKMYRESUME_IMAGE) resume/
-	$(HACKMYRESUME) validate resume/resume.json
-	$(HACKMYRESUME) analyze resume/resume.json
-	$(HACKMYRESUME) build resume/resume.json TO static/resume/index.html static/resume/resume.pdf 
+	docker build -t $(JSONRESUME_IMAGE) resume/
+	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml
+	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml
 
 watch: clean resume
 	sleep 2 && open http://127.0.0.1:1313/ &

@@ -31,3 +31,8 @@ theme = "aerial"
   medium = "Email"
   icon = "envelope-o"
   link = "mailto:cplee@nektos.com"
+
+[[params.social]]
+  medium = "Resume"
+  icon = "file-text"
+  link = "/resume/resume.pdf"
