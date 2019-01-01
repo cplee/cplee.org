@@ -8,10 +8,23 @@ action "build" {
   args = "hugo"
 }
 
+
+action "resume-html" {
+  uses = "resume"
+  args = "json_resume convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml"
+  needs = ["build"]
+}
+
+action "resume-pdf" {
+  uses = "resume"
+  args = "json_resume convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml"
+  needs = ["resume-html"]
+}
+
 action "test" {
   uses = "docker://cibuilds/hugo:0.53"
   args = "htmlproofer public --empty-alt-ignore --disable-external"
-  needs = ["build"]
+  needs = ["resume-pdf"]
 }
 
 action "deploy" {
