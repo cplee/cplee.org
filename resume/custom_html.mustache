@@ -45,22 +45,37 @@
 	</td>
 	</table>
 
-
-	{{#github_projects}}
-	<h2><div class="icon-github icon-square"></div> ##github_projects##</h2>
+	{{#experience}}
+	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
 	<ul>
-	{{#details}}
-		<li><a href="https://github.com/{{project_name}}">{{project_name}}</a>
-		{{#tagline}} &raquo; {{{tagline}}}{{/tagline}}
+		{{#items}}
+		<li>{{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}}
+			<span class="right">({{from}} – {{to}})</span>
+			<div>
+			{{#technology_used}}
+				{{#tools}}
+				<span class="label label-default">{{name}}</span>
+				{{/tools}}
+			</div>
+			{{/technology_used}}
 			<ul>
-				{{#description}}
+				{{#details}}
 				<li>{{{.}}}</li>
-				{{/description}}
+				{{/details}}
 			</ul>
+			{{#case_studies}}
+				<ul>
+					<li><b>Customer Case Studies</b>
+							{{#details}}
+								<span class="label label-default"><a href="{{url}}" target="_blank">{{title}}</a></span>
+							{{/details}}
+					</li>
+				</ul>
+			{{/case_studies}}
 		</li>
-	{{/details}}
+		{{/items}}
 	</ul>
-	{{/github_projects}}
+	{{/experience}}
 
 	{{#skills}}
 	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
@@ -117,39 +132,21 @@
 	</ul>
 	{{/sharing}}
 
-	{{#experience}}
-	<h2><div class="icon-briefcase icon-square"></div> ##experience##</h2>
+	{{#github_projects}}
+	<h2><div class="icon-github icon-square"></div> ##github_projects##</h2>
 	<ul>
-		{{#items}}
-		<li>{{title}}, {{{organisation}}}{{#location}}, {{{location}}}{{/location}}
-			<span class="right">({{from}} – {{to}})</span>
-			<div>
-			{{#technology_used}}
-				{{#tools}}
-				<span class="label label-default">{{name}}</span>
-				{{/tools}}
-			</div>
-			{{/technology_used}}
+	{{#details}}
+		<li><a href="https://github.com/{{project_name}}">{{project_name}}</a>
+		{{#tagline}} &raquo; {{{tagline}}}{{/tagline}}
 			<ul>
-				{{#details}}
+				{{#description}}
 				<li>{{{.}}}</li>
-				{{/details}}
+				{{/description}}
 			</ul>
-			{{#case_studies}}
-				<ul>
-					<li>Customer Case Studies
-						<ul>
-							{{#details}}
-							<li><a href="{{url}}" target="_blank">{{title}}</a></li>
-							{{/details}}
-						</ul>
-					</li>
-				</ul>
-			{{/case_studies}}
 		</li>
-		{{/items}}
+	{{/details}}
 	</ul>
-	{{/experience}}
+	{{/github_projects}}
 
 	{{#other_projects}}
 	<h2><div class="icon-gear icon-square"></div> ##other_projects##</h2>

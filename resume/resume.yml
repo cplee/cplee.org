@@ -61,13 +61,15 @@ bio_data:
       url: https://youtu.be/tSZZC1cf4h8?t=960
 
     webinars:
+    - title: Deconstructing Cloud Native in the Enterprise (w/ John Willis)
+      url: https://webinars.devops.com/deconstructing-cloud-native-in-the-enterprise-with-john-willis-and-liatrio
     - title: Microservices as Containers on AWS...for Fun and Profit
       url: https://www.brighttalk.com/webcast/8901/258551
-    - title: AWS re:Invent 2017 DevOps Re:Cap
+    - title: AWS re:Invent 2017 DevOps Re:Cap (w/ Paul Duvall)
       url: https://www.brighttalk.com/webcast/8901/292815
     - title: Dos and Don’ts for DevOps Automation on AWS
       url: https://www.brighttalk.com/webcast/8901/324107
-    - title: AWS re:Invent 2018 DevOps Re:Cap
+    - title: AWS re:Invent 2018 DevOps Re:Cap (w/ Paul Duvall)
       url: http://bit.ly/devopsrecap
 
     posts:
@@ -130,10 +132,10 @@ bio_data:
       from: Feb. 2019
       to: present
       details:
-      - Led the engineering practice for Liatrio. Oversaw the hiring, development and retention of engineers who 
+      - Managed the engineering practice for Liatrio. Oversaw the hiring, development and retention of engineers who 
         worked with clients to increase the speed and safety of software delivery.
       - Established internal "flywheel" program to continuously improve engineer skills by rotating them off the client for 
-        1 week a quarter to focus on building new capabilities using modern engineering tools and practices.
+        1 week a quarter to focus on building new capabilities using modern engineering practices.
       - Worked with customers to address their organizational and technical challenges through the use of 
         techniques such as automation, self-service and fast feedback.
       - Developed immersive learning experience called "Ignite Lab" to offer a multi-day hands on environment
@@ -155,7 +157,7 @@ bio_data:
       from: Jan. 2016
       to: Jan. 2019
       details:
-      - Led the engineering practice for Stelligent. Oversaw the hiring, development and retention of the best DevOps engineers
+      - Managed the engineering practice for Stelligent. Oversaw the hiring, development and retention of the best DevOps engineers
         in the industry. Grew the team from 30 to 60 engineers and built out middle management to support growth.
       - Worked with sales to deliver a 2x growth revenue over 12 month period.
       - Worked with customers to assess requirements and then architect and deliver solutions to help them increase the 
@@ -232,13 +234,13 @@ bio_data:
         - Maven
         - WebSphere
         - DB2
-    - title: Senior Software Engineer
+    - title: Engineering Manager
       organisation: O1 Communications
       location: Sacramento, CA
       from: Mar. 2003
       to: Aug. 2005
       details:
-      - Selected to serve as a technical specialist on the design, architecture, and development of software systems and software projects.
+      - Managed the hiring, development and retention of engineers who developed the VoIP product for O1 Communications.
       - Led team of engineers to design, develop and support a softswitch providing SIP (RFC 3261-3265) to ISUP (ANSI T1.113) gateway service 
         to a statewide VoIP network written in C.  Supported TCAP (ANSI T1.114) and ENUM (RFC 3761) for IN infrastructure. 
       - Led team of engineers to design, develop and support a RADIUS (RFC 2865-2866) application capable of handling more than 10 million calls per day.
@@ -252,13 +254,13 @@ bio_data:
         - SIP
         - Linux
         - MySQL
-    - title: Senior Application Developer
+    - title: Directory of Engineering
       organisation: Innotas
       location: Sacramento, CA
       from: Mar. 2001
       to: Mar. 2003
       details:
-      - Selected to serve as a technical specialist on the design, architecture, development and maintenance of software systems and software projects.
+      - Managed the hiring, development and retention of engineers who developed the core product for Innotas.
       - Led team of engineers to develop and support core software using the eXtreme Programming methodology 
         for a Project Portfolio Management software application. 
       - Instrumental in the design and implementation of a data driven MVC (Model View Controller) architecture 
@@ -277,6 +279,7 @@ bio_data:
       to: Sep. 1999
       details:
       - Partnered on the start-up of an Internet Service Provider; eventually sold to OneMain.com. 
+      - Managed the hiring, development and retention of engineers in the network, systems and applications departments at The Grid.
       - Developed core intranet providing a web-based CRM, accounts receivables, lead tracking, human 
         resource management, marketing and finance reporting, and trouble ticketing to the company.
       - Designed, implemented and managed a complex statewide DS3 network with multiple BGP peers, 
