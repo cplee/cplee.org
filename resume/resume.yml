@@ -273,6 +273,16 @@ bio_data:
         - Ant
         - Oracle
     - title: VP Technology
+      organisation: eWindowShop.com
+      location: Chico, CA
+      from: Sep. 1999
+      to: Feb. 2001
+      details:
+      - Partnered on the start-up of an ecommerce 
+      - Managed the hiring, development and retention of engineers for the core ecommerce application.
+      - Developed core intranet providing a web-based CRM, accounts receivables, and trouble ticketing to the company.
+      - Developed ecommerce platform providing inventory management, web storefront and order management for small business.
+    - title: VP Technology
       organisation: The Grid
       location: San Luis Obispo, CA
       from: Mar. 1996
