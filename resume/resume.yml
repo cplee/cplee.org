@@ -49,6 +49,8 @@ bio_data:
   
   sharing:
     conferences:
+    - title: "Run GitHub Actions locally for fast feedback - GitHub Satellite 2020"
+      url: https://www.youtube.com/watch?v=jzdHKwGVjvk
     - title: "DeliveryConf 2019: The Last Bottleneck of Continuous Delivery"
       url: https://www.deliveryconf.com/talks/the-last-bottleneck-of-continuos-delivery/
     - title: "AWS re:Invent 2019: From monolith to cloud native in 30 minutes or less! (DVC05)"
