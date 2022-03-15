@@ -39,7 +39,6 @@ bio_data:
     schools:
     - major: Computer Engineering
       institution: California Polytechnic State University-San Luis Obispo
-      degree: B.S.
 
   papers:
     items:
@@ -49,6 +48,8 @@ bio_data:
   
   sharing:
     conferences:
+    - title: "AWS Summit DC 2021: Improve the developer experience with AWS CDK"
+      url: https://www.youtube.com/watch?v=R3AEIIw98j4
     - title: "Run GitHub Actions locally for fast feedback - GitHub Satellite 2020"
       url: https://www.youtube.com/watch?v=jzdHKwGVjvk
     - title: "DeliveryConf 2019: The Last Bottleneck of Continuous Delivery"
@@ -63,6 +64,10 @@ bio_data:
       url: https://youtu.be/tSZZC1cf4h8?t=960
 
     webinars:
+    - title: AWS Containers from the Couch | Builders Series
+      url: https://youtu.be/Q2YgBr5XwTE
+    - title: AWS Heroes Panel | Open Cloud Innovations
+      url: https://www.youtube.com/watch?v=4wpAYzdMNCw
     - title: Microservices as Containers on AWS...for Fun and Profit
       url: https://www.brighttalk.com/webcast/8901/258551
     - title: AWS re:Invent 2017 DevOps Re:Cap
@@ -126,11 +131,31 @@ bio_data:
 
   experience:
     items:
+    - title: CTO
+      organisation: Gaggle
+      location: Sacramento, CA
+      from: Jul. 2020
+      to: present
+      details:
+      - Led a transformation of the techology organization to increase speed and safety of software delivery.
+      - Scaled the software engineering organization through autonomous teams.
+      - Oversaw product management functions. Worked with customers and stakeholders to build prioritized product roadmaps.
+      - Led the machine learning team to improve the precision of our models to reduce false positives and thereby driving down costs.
+      - Architected plans for migration of the remaining workloads from on-premise datacenter to AWS public cloud.
+
+      technology_used:
+        tools:
+        - AWS
+        - CDK
+        - Java
+        - Python
+        - Go
+        - Node.js
     - title: Director of Engineering
       organisation: Liatrio
       location: Sacramento, CA
       from: Feb. 2019
-      to: present
+      to: Jul. 2020
       details:
       - Led the engineering practice for Liatrio. Oversaw the hiring, development and retention of engineers who 
         worked with clients to increase the speed and safety of software delivery.

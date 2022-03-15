@@ -23,7 +23,7 @@ resume:
 	docker build -t $(JSONRESUME_IMAGE) resume/
 	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml
 	$(SED) -i s^http://code.jquery.com^https://code.jquery.com^g static/resume/*.html
-	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml
+#	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml
 
 watch: clean resume
 	sleep 2 && open http://127.0.0.1:1313/ &
