@@ -43,7 +43,7 @@ bio_data:
   papers:
     items:
     - title: "JAX-RS: Java™ API for RESTful Web Services"
-      url: http://download.oracle.com/otn-pub/jcp/jaxrs-2_1-pfd-spec/jaxrs-2_1-pfd-spec.pdf
+      url: https://download.oracle.com/otn-pub/jcp/jaxrs-2_1-pfd-spec/jaxrs-2_1-pfd-spec.pdf
       misc: Version 2.1 Proposed Final Draft, June 15, 2017
   
   sharing:
@@ -75,7 +75,7 @@ bio_data:
     - title: Dos and Don’ts for DevOps Automation on AWS
       url: https://www.brighttalk.com/webcast/8901/324107
     - title: AWS re:Invent 2018 DevOps Re:Cap
-      url: http://bit.ly/devopsrecap
+      url: https://bit.ly/devopsrecap
 
     posts:
     - blog: AWS Containers
@@ -122,6 +122,8 @@ bio_data:
       url: https://dzone.com/users/2901897/caseylee.html
 
     podcasts:
+    - title: "Last Week in AWS: Creating 'Quinntainers' with Casey Lee (Ep. 346)"
+      url: https://www.lastweekinaws.com/podcast/screaming-in-the-cloud/creating-quinntainers-with-casey-lee/
     - title: "DevOps on AWS Radio: Serverless Delivery with Casey Lee (Episode 2)"
       url: https://stelligent.com/2016/06/30/devops-in-aws-radio-serverless-delivery-with-casey-lee-episode-2/
     - title: "DevOps on AWS Radio: mu – DevOps on AWS tool (Episode 10)"
@@ -189,7 +191,7 @@ bio_data:
         speed and safety by which they deliver their applications.
       - Increased brand awareness in DevOps community through blog posts, webinars and public speaking.
       - Led the development of repeatable solutions for continuous delivery pipelines in AWS.
-      - Supported the acquisition and integration of the organization by [HOSTING](http://hosting.com) and then [Mphasis](http://mphasis.com).
+      - Supported the acquisition and integration of the organization by [HOSTING](https://hosting.com) and then [Mphasis](https://mphasis.com).
 
       case_studies:
         details:

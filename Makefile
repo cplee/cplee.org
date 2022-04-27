@@ -9,7 +9,8 @@ SED_IMAGE ?= ubuntu:18.04
 
 ### Evaluate docker commands
 DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/workspace -w /workspace 
-AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
+#AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
+AWS         := aws
 HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
 JSONRESUME  := $(DOCKER) -t $(JSONRESUME_IMAGE) json_resume
 HTMLPROOFER := $(DOCKER) $(HUGO_IMAGE) htmlproofer
@@ -22,8 +23,8 @@ build: clean resume
 resume: 
 	docker build -t $(JSONRESUME_IMAGE) resume/
 	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=html --dest_dir=static resume/resume.yml
-	$(SED) -i s^http://code.jquery.com^https://code.jquery.com^g static/resume/*.html
-#	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml
+	$(SED) -i s^http://^https://^g static/resume/*.html
+	$(JSONRESUME) convert --template=resume/custom_html.mustache --out=pdf --dest_dir=static/resume resume/resume.yml
 
 watch: clean resume
 	sleep 2 && open http://127.0.0.1:1313/ &
