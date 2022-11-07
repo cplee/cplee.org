@@ -2,6 +2,8 @@ baseurl = "https://cplee.org/"
 languageCode = "en-us"
 title = "Casey Lee"
 theme = "aerial"
+enableRobotsTXT = true
+
 
 [params]
   name = "Casey Lee"
