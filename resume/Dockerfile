@@ -1,6 +1,6 @@
-FROM ruby:2.6.0-stretch
+FROM ruby:2.7.8-buster
 
-RUN apt-get update && apt-get install -y libssl1.0-dev && apt-get clean
+RUN apt-get update && apt-get install -y libssl-dev && apt-get clean
 RUN gem install json_resume -v 1.0.6
 
 # Force older version of wkhtmltopdf

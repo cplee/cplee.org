@@ -45,6 +45,12 @@ bio_data:
     - title: "JAX-RS: Java™ API for RESTful Web Services"
       url: https://download.oracle.com/otn-pub/jcp/jaxrs-2_1-pfd-spec/jaxrs-2_1-pfd-spec.pdf
       misc: Version 2.1 Proposed Final Draft, June 15, 2017
+    - title: "Deployment Pipeline Reference Architecture"
+      url: https://pipelines.devops.aws.dev/
+      misc: Version 1.0, January 30, 2023
+    - title: "AWS Well-Architected DevOps Guidance"
+      url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html
+      misc: Version 1.0, September 20, 2023
   
   sharing:
     conferences:
@@ -133,11 +139,29 @@ bio_data:
 
   experience:
     items:
+    - title: Principal DevOps Consultant
+      organisation: Amazon Web Services (AWS)
+      location: Sacramento, CA
+      from: May. 2022
+      to: present
+      details:
+      - Working with customers to increase the speed and safety of software delivery.
+      - Published [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev/).
+      - Contributed to [AWS Well-Architected DevOps Guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html) whitepaper.
+
+      technology_used:
+        tools:
+        - AWS
+        - CDK
+        - Java
+        - Python
+        - Go
+        - Typscript
     - title: CTO
       organisation: Gaggle
       location: Sacramento, CA
       from: Jul. 2020
-      to: present
+      to: May 2022
       details:
       - Led a transformation of the techology organization to increase speed and safety of software delivery.
       - Scaled the software engineering organization through autonomous teams.

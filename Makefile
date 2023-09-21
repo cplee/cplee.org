@@ -1,15 +1,13 @@
 # Configuration 
 BUCKET_NAME ?= cplee.org
 DISTRIBUTION_ID ?= E13UEQT4E03VGU 
-AWS_IMAGE ?= cibuilds/aws:1.16.81
 HUGO_IMAGE ?= cibuilds/hugo:0.53
 JSONRESUME_IMAGE ?= json_resume:1.0.6
-SED_IMAGE ?= ubuntu:18.04
+SED_IMAGE ?= ubuntu:23.10
 
 
 ### Evaluate docker commands
-DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/workspace -w /workspace 
-#AWS         := $(DOCKER) -v $(HOME)/.aws:/root/.aws -e AWS_PROFILE -e AWS_REGION $(AWS_IMAGE) aws
+DOCKER      := docker run --rm -v $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST)))):/workspace:delegated -w /workspace 
 AWS         := aws
 HUGO        := $(DOCKER) -p 1313:1313 $(HUGO_IMAGE) hugo
 JSONRESUME  := $(DOCKER) -t $(JSONRESUME_IMAGE) json_resume
