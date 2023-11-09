@@ -2,6 +2,9 @@ site_name: Casey Lee
 repo_url: "https://github.com/cplee/cplee.org"
 theme:
   name: terminal
+  custom_dir: docs/custom_theme/
+  analytics: 
+    gtag: G-0VQ2XEVKT8
   features:
     - navigation.side.hide
 nav:

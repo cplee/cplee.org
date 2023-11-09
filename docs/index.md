@@ -2,7 +2,7 @@
 [![linkedin](img/linkedin.svg)](https://linkedin.com/in/cplee)
 [![github](img/github.svg)](https://github.com/cplee)
 [![twitter](img/x.svg)](https://twitter.com/nektos)
-[Resume](resume){ .btn .btn-default }
+[Resume](resume/resume.html){ .btn .btn-default }
 
 I am a builder with over 20 years of experience in software engineering and information technology. I currently work as a **Principal DevOps Consultant** at **Amazon Web Services (AWS)**, where I develop new products and services to increase the speed and safety of software delivery.
 
