@@ -1,4 +1,5 @@
 site_name: Casey Lee
+site_description: Casey Lee - Software engineer, DevOps consultant, AWS Hero
 repo_url: "https://github.com/cplee/cplee.org"
 theme:
   name: terminal
