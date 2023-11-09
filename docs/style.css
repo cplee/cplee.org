@@ -17,4 +17,6 @@ img[alt="linkedin"] {
 }
 .btn {
   vertical-align: bottom;
+  padding-left: 15px;
+  padding-right: 15px;
 }
