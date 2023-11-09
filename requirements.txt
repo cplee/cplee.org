@@ -1,3 +1,4 @@
 mkdocs==1.5.3
 mkdocs-terminal==4.4.0
 weasyprint==60.1
+livereload==2.6.3

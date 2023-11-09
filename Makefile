@@ -9,12 +9,8 @@ lint:
 	markdownlint docs resume
 
 .PHONY: watch
-watch:
-	mkdocs serve
-
-.PHONY: watch-resume
-watch-resume:
-	watch make resume --silent
+watch: clean site resume
+	./devserver.py
 
 site:
 	mkdocs build
