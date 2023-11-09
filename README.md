@@ -1,7 +1,12 @@
-Website for [cplee.org](http://www.cplee.org)
+# Website for [cplee.org](http://www.cplee.org)
 
-# Local Testing
+## Install dependencies
+
+```bash
+brew install pandoc
+pip install -r requirements.txt
+```
+
+## Local Testing
+
 ```make watch```
-
-# Deploy
-```make deploy```
