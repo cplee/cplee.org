@@ -1,14 +1,12 @@
-Website for [cplee.org](http://www.cplee.org)
+# Website for [cplee.org](http://www.cplee.org)
 
 ## Install dependencies
 
 ```bash
 brew install pandoc
-brew install weasyprint
+pip install -r requirements.txt
 ```
 
-# Local Testing
-```make watch```
+## Local Testing
 
-# Deploy
-```make deploy```
+```make watch```

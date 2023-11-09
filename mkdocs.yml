@@ -1,0 +1,14 @@
+site_name: Casey Lee
+repo_url: "https://github.com/cplee/cplee.org"
+theme:
+  name: terminal
+  features:
+    - navigation.side.hide
+nav:
+  - Home: 'index.md'
+  - Resume: 'resume/resume.html'
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - style.css

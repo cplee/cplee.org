@@ -1,0 +1,20 @@
+img[alt="photo"] {
+  max-width: 100px;
+  border-radius: 7px;
+  vertical-align: text-bottom;
+}
+img[alt="twitter"] {
+  max-width: 40px;
+  vertical-align: text-bottom;
+}
+img[alt="github"] {
+  max-width: 40px;
+  vertical-align: text-bottom;
+}
+img[alt="linkedin"] {
+  max-width: 40px;
+  vertical-align: text-bottom;
+}
+.btn {
+  vertical-align: bottom;
+}

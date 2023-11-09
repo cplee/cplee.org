@@ -1,27 +1,41 @@
 .PHONY: all
-all: public/resume/resume.pdf
+all: lint site resume
+
+.PHONY: resume
+resume: site/resume/resume.pdf
+
+.PHONY: lint
+lint:
+	npx markdownlint docs resume
 
 .PHONY: watch
 watch:
-	watch make all --silent
+	mkdocs serve
 
-public/resume:
-	mkdir -p public/resume
+.PHONY: watch-resume
+watch-resume:
+	watch make resume --silent
 
-public/resume/style.css: resume/style.css public/resume
+site:
+	mkdocs build
+
+site/resume: site
+	mkdir -p site/resume
+
+site/resume/style.css: resume/style.css site/resume
 	cp $< $@
 
-public/resume/resume.html: resume/resume.md public/resume/style.css public/resume
+site/resume/resume.html: resume/resume.md site/resume/style.css site/resume
 	pandoc --standalone \
 	--css=style.css \
 	--from markdown+emoji+markdown_in_html_blocks --to html \
 	--metadata pagetitle='Resume - Casey Lee' \
 	--output $@ $<
 
-public/resume/resume.pdf: public/resume/resume.html
+site/resume/resume.pdf: site/resume/resume.html
 	weasyprint \
 	$< $@
 
 .PHONY: clean
 clean:
-	rm -rf public
+	rm -rf site
