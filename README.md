@@ -3,6 +3,7 @@
 ## Install dependencies
 
 ```bash
+npm install -g markdownlint
 brew install pandoc
 pip install -r requirements.txt
 ```

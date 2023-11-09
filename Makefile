@@ -6,7 +6,7 @@ resume: site/resume/resume.pdf
 
 .PHONY: lint
 lint:
-	npx markdownlint docs resume
+	markdownlint docs resume
 
 .PHONY: watch
 watch:

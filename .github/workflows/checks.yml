@@ -15,4 +15,5 @@ jobs:
           sudo apt update
           sudo apt install -y pandoc
       - run: pip install -r requirements.txt
+      - run: npm install -g markdownlint
       - run: make
