@@ -21,10 +21,10 @@
 - Python
 - Java
 
-(May 2022 - present)
+05/2022 - present
 
 - Led engineering team to build a new AWS service and operate a private beta with customers.
-- Built and open-sourced a [CDK construct](https://github.com/cdklabs/cdk-ecs-codedeploy) to create CodeDeploy deployments for ECS.
+- Built and open-sourced a [CDK construct](https://github.com/cdklabs/cdk-ecs-codedeploy) to create CodeDeploy deployments for ECS with >125k downloads.
 - Developed the [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev) resulting in >$6M consulting revenue.
 - Contributed to AWS Well-Architected [DevOps Guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html) whitepaper.
 
@@ -36,7 +36,7 @@
 - Go
 - Typescript
 
-(July 2020 - May 2022)
+07/2020 - 05/2022
 
 - Built CI/CD pipelines with CDK, CodePipeline and CodeBuild to increase deployments from 1 to 30 per week.
 - Scaled AWS infrastructure for >400% YoY growth in file/email processing during COVID with <30% cost increase.
@@ -52,7 +52,7 @@
 - Terraform
 - Java
 
-(Feb. 2019 – July 2020)
+02/2019 – 07/2020
 
 - Transformed internal culture through engineering skill uplift to improve job satisfaction and client renewals.
 - Developed and open-sourced [terraform modules](https://github.com/liatrio/lead-terraform) for engineers to quickly launch environments.
@@ -68,7 +68,7 @@
 - Kubernetes
 - Java
 
-(Jan. 2016 - Jan. 2019)
+01/2016 - 01/2019
 
 - Grew engineering team and revenue by 100% over 12 month period.
 - Built CI/CD pipeline factory for 3M [(case study)](https://aws.amazon.com/solutions/case-studies/3m-his-service-catalog/) to reduce time to create pipelines to <10 minutes.
@@ -85,7 +85,7 @@
 - Python
 - Node.js
 
-(Aug. 2005 - Jan. 2016)
+08/2005 - 01/2016
 
 - Built API architecture on Tomcat/Linux for existing SOAP services on WebShere saving >$200K in license costs.
 - Architected API security framework with OAuth 2.0 and OpenID Connect on PingFederate.
@@ -102,7 +102,7 @@
 - SS7
 - SIP
 
-(Mar. 2003 - Aug. 2005)
+03/2003 - 08/2005
 
 - Led engineering team to build and operate a SIP to ISUP softswitch for a statewide VOIP network.
 - Led engineering team to build and operate a RADIUS service handling >10 million calls per day.
@@ -114,7 +114,7 @@
 - Linux
 - Oracle
 
-(Mar. 2001 - Mar. 2003)
+03/2001 - 03/2003
 
 - Led engineering team to build and operate primary customer product offering Project Portfolio Management.
 - Engineered data driven MVC architecture utilizing JSP, Tiles, Struts, and EJB.
@@ -125,11 +125,11 @@
 - Oracle
 - Java
 
-(Mar. 1996 - Sep. 1999)
+03/1996 - 09/1999
 
 - Partnered on the start-up of an Internet Service Provider; eventually sold to OneMain.com.
 - Engineered and operated statewide network offering dial-up, email, and web services to >40k subscribers.
-- Built web-based CRM handling lead tracking, account managemement, and monthly billing for >40k subscribers.
+- Built web-based CRM handling lead tracking, account management, and monthly billing for >40k subscribers.
 - Architected integration of 20 ISPs and >750,000 subscribers yielding a cost <28% of total revenues.
 
 [[Download PDF](https://cplee.org/resume/casey-lee-resume.pdf)]{#download}

@@ -111,10 +111,11 @@ img[alt="photo"] {
 
 /* SECTION headers */
 h2 {
-  border-bottom: 4px solid grey;
-  padding: 2px;
+  border-bottom: 1px solid grey;
+  color: grey;
+  padding: 0px;
   margin: 2px;
-  display: none;
+  font-size: 8pt;
 }
 
 /* ROLE: title & company */
@@ -164,7 +165,7 @@ ul {
   margin: 0px;
   padding-left: 25px;
   font-size: 11pt;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   clear: left;
 }
 
