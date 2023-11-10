@@ -50,7 +50,7 @@ img[alt="photo"] {
 
 #header li {
   display: inline;
-  margin-left: 12px;
+  margin-left: 5px;
 }
 
 #email { 
@@ -147,6 +147,7 @@ h3 + p + ul {
 p:has(> .skills) {
   margin: 0px;
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 
 .skills {
