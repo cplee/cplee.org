@@ -122,51 +122,44 @@ h2 {
 h3 {
   display: inline;
   font-size: 12pt;
-  float: left;
   margin: 0px;
   margin-top: 5px;
 }
 
 /* ROLE: date range */
-h3 + ul + p {
+h3 + p {
   display: inline;
-  float: right;
   margin: 0px;
   font-style: italic;
   margin-left: 10px;
-  margin-top: 5px;
-}
-
-/* ROLE: tech used */
-h3 + ul {
-  display: inline;
-  float: left;
-  margin: 0px;
-  margin-left: 15px;
-  margin-top: 5px;
-  padding: 0px;
-  clear: none;
-}
-
-h3 + ul li {
-  font-size: 10pt;
-  display: inline;
-  margin-left: 2px;
-  background-color: rgb(103, 156, 216);
-  color: #fff;
-  padding: 1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 10px;
+  margin-top: 0px;
 }
 
 /* ROLE: details */
-ul {
+h3 + p + ul {
   margin: 0px;
-  padding-left: 25px;
+  padding-left: 20px;
   font-size: 11pt;
-  margin-bottom: 2px;
-  clear: left;
+  line-height: 1.15em;
+}
+
+/* ROLE: skills*/
+p:has(> .skills) {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.skills {
+  margin: 0px;
+  padding: 0px;
+  font-size: 8pt;
+}
+
+.skills::before {
+  content: "Skills: ";
+  font-weight: bold;
+  color: grey;
+  font-size: 8pt;
 }
 
 #download a{

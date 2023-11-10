@@ -15,12 +15,6 @@
 
 ### Principal DevOps Consultant, AWS
 
-- AWS
-- Go
-- Typescript
-- Python
-- Java
-
 05/2022 - present
 
 - Led engineering team to build a new AWS service and operate a private beta with customers.
@@ -28,13 +22,9 @@
 - Developed the [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev) resulting in >$6M consulting revenue.
 - Contributed to AWS Well-Architected [DevOps Guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html) whitepaper.
 
-### CTO, Gaggle
+[AWS, Go, Typescript, Python, Java]{.skills}
 
-- AWS
-- Java
-- Python
-- Go
-- Typescript
+### CTO, Gaggle
 
 07/2020 - 05/2022
 
@@ -44,13 +34,9 @@
 - Reorganized engineering department into autonomous build-run teams to reduce lead time from 47 to 12 days.
 - Developed machine learning model to reduce false positive rate, saving >$150k annually.
 
-### Director of Engineering, Liatrio
+[AWS, Java, Python, Go, Typescript]{.skills}
 
-- AWS
-- Kubernetes
-- Go
-- Terraform
-- Java
+### Director of Engineering, Liatrio
 
 02/2019 – 07/2020
 
@@ -60,13 +46,9 @@
 - Built and delivered [hands-on workshop](https://www.liatrio.com/services/ignite-lab) for over 100 customers to learn and apply cloud native practices.
 - Engaged DevOps community through [blog posts](https://cplee.org/#blog-posts), [webinars](https://cplee.org/#webinars) and [public speaking](https://cplee.org/#talks).
 
-### VP Engineering, Stelligent
+[AWS, Kubernetes, Go, Terraform, Java]{.skills}
 
-- AWS
-- Go
-- Python
-- Kubernetes
-- Java
+### VP Engineering, Stelligent
 
 01/2016 - 01/2019
 
@@ -77,13 +59,9 @@
 - Developed and open-sourced [mu](https://github.com/stelligent/mu) to reduce the effort required to implement CI/CD pipelines for customers.
 - Engaged DevOps community through [blog posts](https://cplee.org/#blog-posts), [webinars](https://cplee.org/#webinars) and [public speaking](https://cplee.org/#talks).
 
-### Enterprise Architect, VSP Global
+[AWS, Go, Python, Kubernetes, Java]{.skills}
 
-- AWS
-- Java
-- Chef
-- Python
-- Node.js
+### Enterprise Architect, VSP Global
 
 08/2005 - 01/2016
 
@@ -94,36 +72,27 @@
 - Led engineering team to build and operate a system for >500 CSRs to handle >20,000 phone calls per day.
 - Led engineering team to implement BPM workflow system realizing an annual savings of >$600K.
 
-### Senior Software Engineer, O1
+[AWS, Java, Chef, Python, Node.js]{.skills}
 
-- C/C++
-- Java
-- Linux
-- SS7
-- SIP
+### Senior Software Engineer, O1
 
 03/2003 - 08/2005
 
 - Led engineering team to build and operate a SIP to ISUP softswitch for a statewide VOIP network.
 - Led engineering team to build and operate a RADIUS service handling >10 million calls per day.
 
-### Senior Software Engineer, Innotas
+[C/C++, Java, Linux, SS7, SIP]{.skills}
 
-- Java
-- Tomcat
-- Linux
-- Oracle
+### Senior Software Engineer, Innotas
 
 03/2001 - 03/2003
 
 - Led engineering team to build and operate primary customer product offering Project Portfolio Management.
 - Engineered data driven MVC architecture utilizing JSP, Tiles, Struts, and EJB.
 
-### VP Technology, The Grid
+[Java, Tomcat, Linux, Oracle]{.skills}
 
-- Linux
-- Oracle
-- Java
+### VP Technology, The Grid
 
 03/1996 - 09/1999
 
@@ -131,5 +100,7 @@
 - Engineered and operated statewide network offering dial-up, email, and web services to >40k subscribers.
 - Built web-based CRM handling lead tracking, account management, and monthly billing for >40k subscribers.
 - Architected integration of 20 ISPs and >750,000 subscribers yielding a cost <28% of total revenues.
+
+[Linux, Oracle, Java]{.skills}
 
 [[Download PDF](https://cplee.org/resume/casey-lee-resume.pdf)]{#download}
