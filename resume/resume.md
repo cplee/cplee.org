@@ -2,7 +2,7 @@
 
 # Casey Lee ![photo](https://www.gravatar.com/avatar/2e6997d8442834a313edc63b08b60a18003ab3634b98d10d9625158a41c33dad)
 
-- [cplee@cplee.org](cplee@cplee.org){#email}
+- [cplee@cplee.org](mailto:cplee@cplee.org){#email}
 - [(916) 616-0568]{#phone}
 - [Folsom, CA]{#location}
 - [LinkedIn](https://www.linkedin.com/in/cplee/){#linkedin target="_blank"}
