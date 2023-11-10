@@ -109,6 +109,7 @@ img[alt="photo"] {
   padding-right: 5px !important;
 }
 
+/* SECTION headers */
 h2 {
   border-bottom: 4px solid grey;
   padding: 2px;
@@ -116,20 +117,55 @@ h2 {
   display: none;
 }
 
+/* ROLE: title & company */
 h3 {
   display: inline;
   font-size: 12pt;
+  float: left;
+  margin: 0px;
+  margin-top: 5px;
 }
-h3 + p {
+
+/* ROLE: date range */
+h3 + ul + p {
   display: inline;
   float: right;
   margin: 0px;
+  font-style: italic;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
+/* ROLE: tech used */
+h3 + ul {
+  display: inline;
+  float: left;
+  margin: 0px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 0px;
+  clear: none;
+}
+
+h3 + ul li {
+  font-size: 10pt;
+  display: inline;
+  margin-left: 2px;
+  background-color: rgb(103, 156, 216);
+  color: #fff;
+  padding: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 10px;
+}
+
+/* ROLE: details */
 ul {
   margin: 0px;
   padding-left: 25px;
   font-size: 11pt;
+  margin-bottom: 5px;
+  clear: left;
 }
 
 #download a{
@@ -198,7 +234,7 @@ ul {
 
 @media only screen and (max-width: 1200px) {
   #download{
-    position:fixed;
+    position:absolute;
     display:block;
     top:15px;
     right:100px;

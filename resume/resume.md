@@ -13,58 +13,123 @@
 
 ## Experience
 
-### Principal DevOps Consultant, Amazon Web Services (AWS)
+### Principal DevOps Consultant, AWS
+
+- AWS
+- Go
+- Typescript
+- Python
+- Java
 
 (May 2022 - present)
 
-- Published [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev).
+- Led engineering team to build a new AWS service and operate a private beta with customers.
+- Built and open-sourced a [CDK construct](https://github.com/cdklabs/cdk-ecs-codedeploy) to create CodeDeploy deployments for ECS.
+- Developed the [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev) resulting in >$6M consulting revenue.
 - Contributed to AWS Well-Architected [DevOps Guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html) whitepaper.
 
 ### CTO, Gaggle
 
+- AWS
+- Java
+- Python
+- Go
+- Typescript
+
 (July 2020 - May 2022)
 
-- Led a transformation of the techology organization to increase speed and safety of software delivery.
-- Scaled the software engineering organization through autonomous teams.
-- Oversaw product management functions. Worked with customers and stakeholders to build prioritized product roadmaps.
-- Led the machine learning team to improve the precision of our models to reduce false positives and thereby driving down costs.
-- Architected plans for migration of the remaining workloads from on-premise datacenter to AWS public cloud.
+- Built CI/CD pipelines with CDK, CodePipeline and CodeBuild to increase deployments from 1 to 30 per week.
+- Scaled AWS infrastructure for >400% YoY growth in file/email processing during COVID with <30% cost increase.
+- Operated web scale application processing of >200K files/emails per second supporting millions of students.
+- Reorganized engineering department into autonomous build-run teams to reduce lead time from 47 to 12 days.
+- Developed machine learning model to reduce false positive rate, saving >$150k annually.
 
 ### Director of Engineering, Liatrio
 
-(February 2019 – July 2020)
+- AWS
+- Kubernetes
+- Go
+- Terraform
+- Java
 
-- Led the engineering practice for Liatrio. Oversaw the hiring, development and retention of engineers who worked with clients to increase the speed and safety of software delivery.
-- Established internal "flywheel" program to continuously improve engineer skills by rotating them off the client for 1 week a quarter to focus on building new capabilities using modern engineering tools and practices.
-- Worked with customers to address their organizational and technical challenges through the use of techniques such as automation, self-service and fast feedback.
-- Developed immersive learning experience called "Ignite Lab" to offer a multi-day hands on environment for engineers to learn and apply cloud native practices.
-- Increased brand awareness in DevOps community through blog posts, webinars and public speaking.
+(Feb. 2019 – July 2020)
+
+- Transformed internal culture through engineering skill uplift to improve job satisfaction and client renewals.
+- Developed and open-sourced [terraform modules](https://github.com/liatrio/lead-terraform) for engineers to quickly launch environments.
+- Developed and open-sourced [tool](https://github.com/rode/rode-legacy) to automate governance of the SDLC.
+- Built and delivered [hands-on workshop](https://www.liatrio.com/services/ignite-lab) for over 100 customers to learn and apply cloud native practices.
+- Engaged DevOps community through [blog posts](https://cplee.org/#blog-posts), [webinars](https://cplee.org/#webinars) and [public speaking](https://cplee.org/#talks).
 
 ### VP Engineering, Stelligent
 
-(January 2016 - January 2019)
+- AWS
+- Go
+- Python
+- Kubernetes
+- Java
 
-- Led the engineering practice for Stelligent. Oversaw the hiring, development and retention of the best DevOps engineers in the industry. Grew the team from 30 to 60 engineers and built out middle management to support growth.
-- Worked with sales to deliver a 2x growth revenue over 12 month period.
-- Worked with customers to assess requirements and then architect and deliver solutions to help them increase the speed and safety by which they deliver their applications.
-- Increased brand awareness in DevOps community through blog posts, webinars and public speaking.
-- Led the development of repeatable solutions for continuous delivery pipelines in AWS.
-- Supported the acquisition and integration of the organization by HOSTING and then Mphasis.
+(Jan. 2016 - Jan. 2019)
+
+- Grew engineering team and revenue by 100% over 12 month period.
+- Built CI/CD pipeline factory for 3M [(case study)](https://aws.amazon.com/solutions/case-studies/3m-his-service-catalog/) to reduce time to create pipelines to <10 minutes.
+- Developed infrastructure pipeline for Verizon [(case study)](https://aws.amazon.com/partners/success/verizon/) to achieve 100% compliance with security policies.
+- Built an AWS account factory for Washington Post [(case study)](https://aws.amazon.com/partners/success/washington-post-stelligent/) to enforce security compliance.
+- Developed and open-sourced [mu](https://github.com/stelligent/mu) to reduce the effort required to implement CI/CD pipelines for customers.
+- Engaged DevOps community through [blog posts](https://cplee.org/#blog-posts), [webinars](https://cplee.org/#webinars) and [public speaking](https://cplee.org/#talks).
 
 ### Enterprise Architect, VSP Global
 
-(August 2005 - January 2016)
+- AWS
+- Java
+- Chef
+- Python
+- Node.js
 
-- Led the migration of architecture for the organization from SOAP services on WebSphere running on AIX to REST APIs on JBoss and Tomcat running on Linux saving hundreds of thousands of dollars in license costs
-- Implemented DevOps tooling and processes for the organization including automation with Chef and virtualization on both AWS and VMware to provide developers with self service capabilities to provision machines in minutes rather than days
-- Architect security around the APIs and websites using industry standards such as OAuth 2.0 and OpenID Connect
-- Established an Open Source Software contribution program to encourage developers to engage and contribute back to the open source community
-- Initiated research and development efforts around Spring Boot and Docker including proof of concepts and adoption roadmaps
-- Educated and supported the development teams on the adoption of the new technologies
-systems.
-- Led team of engineers to design, develop and support a web-based CRM system for use by the 500+ customer service representatives to replace 20+ year old legacy mainframe applications and handle over 20,000 live phone calls per day.
-- Led the research and acquisition of a Case Management and BPM system for the support of the workflows between our Claims, Customer Service, Fraud and Provider Relations groups. The implementation of the new system realized a savings to the business area of over $600,000 annually.
-- Championed the adoption of the Scrum methodology on our project team and evangelizing agile practices to the rest of IT such as TDD, Continuous Integration via Jenkins, short sprints of less than 2 weeks, story points and team collocation.
-- Received a Platinum Award (given to one employee annually) for implementing an OSGi framework in our SOA enabling local service bindings with performance improvements that allowed for a savings of 10+ seconds per phone call realizing a savings to the company of over $800,000 annually.
+(Aug. 2005 - Jan. 2016)
+
+- Built API architecture on Tomcat/Linux for existing SOAP services on WebShere saving >$200K in license costs.
+- Architected API security framework with OAuth 2.0 and OpenID Connect on PingFederate.
+- Engineered automation with Chef, AWS, and VMware to reduce VM provision time from days to minutes.
+- Consulted with internal engineering teams on adoption of new tools and processes to deliver software faster.
+- Led engineering team to build and operate a system for >500 CSRs to handle >20,000 phone calls per day.
+- Led engineering team to implement BPM workflow system realizing an annual savings of >$600K.
+
+### Senior Software Engineer, O1
+
+- C/C++
+- Java
+- Linux
+- SS7
+- SIP
+
+(Mar. 2003 - Aug. 2005)
+
+- Led engineering team to build and operate a SIP to ISUP softswitch for a statewide VOIP network.
+- Led engineering team to build and operate a RADIUS service handling >10 million calls per day.
+
+### Senior Software Engineer, Innotas
+
+- Java
+- Tomcat
+- Linux
+- Oracle
+
+(Mar. 2001 - Mar. 2003)
+
+- Led engineering team to build and operate primary customer product offering Project Portfolio Management.
+- Engineered data driven MVC architecture utilizing JSP, Tiles, Struts, and EJB.
+
+### VP Technology, The Grid
+
+- Linux
+- Oracle
+- Java
+
+(Mar. 1996 - Sep. 1999)
+
+- Partnered on the start-up of an Internet Service Provider; eventually sold to OneMain.com.
+- Engineered and operated statewide network offering dial-up, email, and web services to >40k subscribers.
+- Built web-based CRM handling lead tracking, account managemement, and monthly billing for >40k subscribers.
+- Architected integration of 20 ISPs and >750,000 subscribers yielding a cost <28% of total revenues.
 
 [[Download PDF](https://cplee.org/resume/resume.pdf)]{#download}
