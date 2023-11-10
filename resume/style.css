@@ -5,9 +5,11 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src:
-    url('./fa-solid-900.ttf') format('truetype'),
-    url('./fa-brands-400.ttf') format('truetype');
+  src: url('./fa-solid-900.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'FontAwesomeBrands';
+  src: url('./fa-brands-400.ttf') format('truetype');
 }
 
 body {
@@ -81,7 +83,7 @@ img[alt="photo"] {
 
 #linkedin:before {
   content: "\f08c";
-  font-family: FontAwesome;
+  font-family: FontAwesomeBrands;
   padding-right: 5px !important;
 }
 
@@ -92,7 +94,7 @@ img[alt="photo"] {
 
 #github:before {
   content: "\f09b";
-  font-family: FontAwesome;
+  font-family: FontAwesomeBrands;
   padding-right: 5px !important;
 }
 
