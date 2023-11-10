@@ -51,6 +51,7 @@ img[alt="photo"] {
 #header li {
   display: inline;
   margin-left: 5px;
+  font-size: 11pt;
 }
 
 #email { 
