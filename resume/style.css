@@ -5,11 +5,9 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('./fa-solid-900.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('./fa-brands-400.ttf') format('truetype');
+  src:
+    url('./fa-solid-900.ttf') format('truetype'),
+    url('./fa-brands-400.ttf') format('truetype');
 }
 
 body {
