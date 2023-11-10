@@ -6,9 +6,7 @@ theme:
   custom_dir: docs/custom_theme/
   features:
     - navigation.side.hide
-nav:
-  - Home: 'index.md'
-  - Resume: 'resume/resume.html'
+    - navigation.top.search_button.hide
 markdown_extensions:
   - attr_list
 

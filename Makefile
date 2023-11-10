@@ -32,7 +32,7 @@ site/resume/%.html: resume/%.md
 	--output $@ $<
 
 site/resume/casey-lee-resume.pdf: site/resume site/resume/resume.html site/resume/style.css site/resume/fa-brands-400.ttf site/resume/fa-solid-900.ttf
-	weasyprint $< $@
+	weasyprint site/resume/resume.html site/resume/casey-lee-resume.pdf
 
 .PHONY: clean
 clean:
