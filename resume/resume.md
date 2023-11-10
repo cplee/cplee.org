@@ -132,4 +132,4 @@
 - Built web-based CRM handling lead tracking, account managemement, and monthly billing for >40k subscribers.
 - Architected integration of 20 ISPs and >750,000 subscribers yielding a cost <28% of total revenues.
 
-[[Download PDF](https://cplee.org/resume/resume.pdf)]{#download}
+[[Download PDF](https://cplee.org/resume/casey-lee-resume.pdf)]{#download}

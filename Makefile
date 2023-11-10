@@ -2,7 +2,7 @@
 all: lint site resume
 
 .PHONY: resume
-resume: site/resume/resume.pdf
+resume: site/resume/casey-lee-resume.pdf
 
 .PHONY: lint
 lint:
@@ -28,7 +28,7 @@ site/resume/resume.html: resume/resume.md site/resume/style.css site/resume
 	--metadata pagetitle='Resume - Casey Lee' \
 	--output $@ $<
 
-site/resume/resume.pdf: site/resume/resume.html
+site/resume/casey-lee-resume.pdf: site/resume/resume.html
 	weasyprint \
 	$< $@
 
