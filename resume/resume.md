@@ -13,11 +13,11 @@
 
 ## Experience
 
-### Principal DevOps Consultant, AWS
+### Principal Engineer, AWS
 
 05/2022 - present
 
-- Led engineering team to build a new AWS service and operate a private beta with customers.
+- Led engineering teams to build a new AWS service and operate a private beta with customers.
 - Built and open-sourced a [CDK construct](https://github.com/cdklabs/cdk-ecs-codedeploy) to create CodeDeploy deployments for ECS with >125k downloads.
 - Developed the [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev) resulting in >$6M consulting revenue.
 - Contributed to AWS Well-Architected [DevOps Guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html) whitepaper.
