@@ -4,7 +4,7 @@
 [![twitter](img/x.svg)](https://twitter.com/nektos)
 [CV](resume/resume.html){ .btn .btn-default }
 
-I am a builder with over 20 years of experience in software engineering and information technology. I currently work as a **Principal DevOps Consultant** at **Amazon Web Services (AWS)**, where I develop new products and services to increase the speed and safety of software delivery.
+I am a builder with over 20 years of experience in software engineering and information technology. I currently work as a **Principal Engineer** at **Amazon Web Services (AWS)**, where I develop new products and services to increase the speed and safety of software delivery.
 
 I find joy in helping engineering teams deliver at their peak efficiency. I contribute regularly to open source and maintain a project called [nektos/act](https://github.com/nektos/act) that developers use to run GitHub Actions locally.
 
